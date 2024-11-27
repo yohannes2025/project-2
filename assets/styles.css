@@ -18,3 +18,23 @@
   margin-bottom: 10px;
   overflow: auto;
 }
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 3fr);
+  gap: 5px;
+}
+
+button {
+  height: 80px;
+  width: 70px;
+  font-size: 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #f1f1f1;
+}
+
+button:hover {
+  background-color: #e1e1e1;
+}
