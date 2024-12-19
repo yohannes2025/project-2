@@ -1,40 +1,87 @@
+body{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #ccc;
+  
+}
+
 .calculator {
   width: 300px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  background-color: #fff;
+  background-color: #ffffff81;
   padding: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-.display {
+#calc-display {
+  margin: 10px;
+  padding: 10px;
+  width: 100%;
   height: 60px;
-  font-size: 24px;
+  font-size: 2rem;
+  font-weight: bold;
   text-align: right;
-  padding: 5px;
-  background-color: #f9f9f9;
-  border: 1px solid #ccc;
+  background-color:#333;
+  color: white;
+  border: 1px solid #cccccc8e;
   border-radius: 5px;
   margin-bottom: 10px;
   overflow: auto;
+  
 }
 
 .buttons {
+  margin: 10px;
   display: grid;
   grid-template-columns: repeat(4, 3fr);
   gap: 5px;
 }
 
-button {
-  height: 80px;
-  width: 70px;
+.btn {
+  height: 60px;
+  width: 60px;
   font-size: 25px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  background-color: #f1f1f1;
+  
 }
 
-button:hover {
-  background-color: #e1e1e1;
+
+
+.form-check{
+  margin: 10px;
+  padding: 10px;
+}
+
+/* Mobile Devices (up to 600px width) */
+@media only screen and (max-width: 600px) {
+  .calculator-display {
+    font-size: 1.5rem; /* Smaller text for smaller screens */
+    padding: 8px; /* Adjust padding for smaller screens */
+    width: 100%; /* Ensure the display fits well */
+  }
+}
+
+/* Tablets (between 601px and 1024px width) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .calculator-display {
+    font-size: 1.8rem; /* Slightly larger text for tablets */
+    padding: 9px; /* Adjust padding for tablet screens */
+    width: 100%; /* Ensure the display fits well */
+  }
+}
+
+/* Desktops and Larger Screens (1025px and above) */
+@media only screen and (min-width: 1025px) {
+  .calculator-display {
+    font-size: 2rem; /* Larger text for desktops */
+    padding: 10px; /* Standard padding for desktop */
+    width: 100%; /* Full width */
+  }
 }
